@@ -1,144 +1,145 @@
-🛒 Online Shopping Backend System
+<!-- <h1 align="center">Get & Go Bazar...!!</h1> -->
+<h1 align="center"><img align="center" height="45" src="https://user-images.githubusercontent.com/107461385/216571082-cddace21-988d-4cba-bafc-545b2553337d.jpeg"> &nbsp;Get & Go Bazar...!! </h1>
 
-A backend system for an Online Shopping Application built with Java, Spring Boot, Spring Data JPA, and MySQL.
-This project provides RESTful APIs for user and admin authentication, product management, cart management, order handling, and more.
-API testing and documentation is enabled with Postman and Swagger.
+A backend system for an online shopping application with APIs for all relevant functionalities including user and admin registration, log in and CRUD functionalities for both admin and customer as per user eligibility. 
 
-🚀 Tech Stack & Tools
-Java 17+
+## Tech Stack and Tools:
 
-Spring Framework
+* Java
+* Spring Framework
+* Spring Boot
+* Spring Data JPA
+* MySQL
+* Postman
+* Swagger
 
-Spring Boot
-
-Spring Data JPA
-
-MySQL
-
-Postman
-
-Swagger
-
+<!-- <p align="center">
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="java" />
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="mysql" />
+</p> -->
 
 
-📦 Modules
-The project consists of the following modules:
 
-Admin Module
+## More about the project -
+<!-- ![Get_Go_Bazar !!](https://user-images.githubusercontent.com/107461385/216571082-cddace21-988d-4cba-bafc-545b2553337d.jpeg) -->
+<p align="center">
+<img src="https://user-images.githubusercontent.com/107461385/216571082-cddace21-988d-4cba-bafc-545b2553337d.jpeg" width="700px" height="500px"/>
+</p>
+<br />
 
-Customer Module
+## ER Diagram -
 
-Cart & Cart-Product Module
+<!-- ![ER Diagram](https://user-images.githubusercontent.com/107461385/216570084-222248a1-6c27-4f12-a05b-b7e67b327c31.png) -->
+<p align="center">
+<img src="https://github.com/Vivekgirhare/Online-Shopping-Application/assets/107461385/97bd8564-b77b-4eca-a320-20b02048cc43" width="800px" />
+</p>
+<!-- ER Diagram with relationship between customer and address ==> MTM (Bi) 
+https://user-images.githubusercontent.com/107461385/216570084-222248a1-6c27-4f12-a05b-b7e67b327c31.png -->
 
-Category Module
+## Modules -
 
-Product Module
+This project has following modules:
 
-Orders Module
+- Admin Module
+- Customer Module
+- Cart and Cart-Product Module
+- Category Module
+- Product Module
+- Orders Module
+- Address Module
 
-Address Module
+### 🚀 Admin Features -
+- Admin Login
+- Admin Logout
+- Add an admin
+- Update admin details
+- View admin details by admin id
+- Delete admin by admin id
+- View all admin details
+- Update admin password
 
-🔑 Features
-👨‍💼 Admin Features
-Admin Login / Logout
+### 🚀 Customer Features -
+- Customer Login
+- Customer Logout
+- Add a customer
+- View customer details by id
+- Update customer details 
+- Delete customer by customer id
+- View all customer details
+- Update customer password
 
-Add / Update / Delete Admin
+### 🚀 Cart and Cart-Product Features -
+- Add a product to cart
+- Remove a product from cart
+- Update the quantity of a product in cart
+- Remove all products form a cart
+- View all products in a cart
+- View total cart price for a cart of a customer by customer id
 
-View Admin details by ID
+### 🚀 Category Features -
+- Add a category
+- Remove a category
+- Get all categories
+- Get a category by id
 
-View all Admins
+### 🚀 Product Features -
+- View all products
+- Add a product
+- Update a product
+- View a product by product id
+- View all products by category
+- Remove a product
+- Add a product to a category
 
-Update Admin password
+### 🚀 Orders Features -
+- Add an order with an existing address
+- Add an order with a new address
+- Update order status
+- Remove an order
+- View an order by order id
+- View all orders by date
+- View all orders by city name
+- View all orders of a customer
+- View all orders in ascending order by any specific property
+- View all orders in descending order by any specific property
+- View all orders with pagination and in ascending order by any specific property
+- View all orders with pagination and in descending order by any specific property
 
-👤 Customer Features
-Customer Login / Logout
+### 🚀 Address Features -
+- Add an address to a customer
+- Update an address
+- Remove an address
+- View all addresses
+- View an address by address id
+- View all addresses by pincode
+- View all addresses by building name
+- View all addresses of orders by pincode
+- View all addresses of customers by pincode  
+- View all addresses of orders by country and state name
+- View all addresses of customers by country and state name 
+- View all addresses in ascending order by any specific property
+- View all addresses in descending order by any specific property
+- View all addresses with pagination and in ascending order by any specific property
+- View all addresses with pagination and in descending order by any specific property
 
-Add / Update / Delete Customer
+## Installation & Run -
 
-View Customer details by ID
+* Before running the API server, you should update the database config inside the [application.properties]
+* Update the port number, username and password as per your local database config.
 
-View all Customers
+```
+    server.port=8877
+    spring.datasource.url=jdbc:mysql://localhost:3306/db22
+    spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+    spring.datasource.username=root
+    spring.datasource.password=root
 
-Update Customer password
+```
 
-🛒 Cart & Cart-Product Features
-Add / Remove Product from Cart
-
-Update Product Quantity in Cart
-
-Remove all Products from Cart
-
-View all Products in Cart
-
-View Total Cart Price by Customer ID
-
-🏷️ Category Features
-Add / Remove Category
-
-Get all Categories
-
-Get Category by ID
-
-📦 Product Features
-View all Products
-
-Add / Update / Delete Product
-
-View Product by ID
-
-View Products by Category
-
-Assign Product to Category
-
-📑 Orders Features
-Add Order (with existing / new Address)
-
-Update Order Status
-
-Remove Order
-
-View Order by ID
-
-View Orders by Date / City / Customer
-
-Sort Orders (Ascending / Descending by property)
-
-Pagination Support
-
-🏠 Address Features
-Add / Update / Remove Address
-
-View all Addresses
-
-View Address by ID, Pincode, or Building Name
-
-Filter Addresses by Orders / Customers, Pincode, Country & State
-
-Sort Addresses (Ascending / Descending by property)
-
-Pagination Support
-
-⚙️ Installation & Run
-Clone the repository
-
-git clone https://github.com/your-username/online-shopping-backend.git
-cd online-shopping-backend
-Configure your database in application.properties:
-
-server.port=8877
-spring.datasource.url=jdbc:mysql://localhost:3306/db22
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.username=root
-spring.datasource.password=root
-Run the project:
-
-mvn spring-boot:run
-🌐 API Documentation
-Base URL:
-
-http://localhost:8877/
-Swagger UI:
-
+## API Root Endpoint -
+```
+https://localhost:8877/
+```
+```
 http://localhost:8877/swagger-ui/index.html
-📬 API Testing
-You can use Postman or Swagger to test all endpoints.
+```
